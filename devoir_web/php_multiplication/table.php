@@ -96,6 +96,6 @@ $table = $_SESSION['table'];
 </html>  
 <script>
 function changerPage(){
-    window.location.href= "multiplication.php"
+    window.location.href= "main.php"
 }
 </script>
