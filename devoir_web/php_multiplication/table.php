@@ -14,6 +14,7 @@ $b_mod = $_POST['b_mod'];
 $index_mod = $_POST['index_mod'];
 $test = $_GET["t"]; //test si la page a déjà été rechargée
 $color = array("pair","impair"); // pour la parité
+$ligne = 0; // ligne pour la parité
 
 if ($test == 1) {   //si une valeur a ete deja supprime
     $table = $_SESSION['table'];
@@ -67,7 +68,7 @@ $table = $_SESSION['table'];
             if(count($table) > 0)
             {
                 foreach ($table as $i => $row) {
-                    echo '<tr class='.$color[($row["a"]*$row["b"])%2].'>
+                    echo '<tr class='.$color[($ligne%2)].'>
                         <td>'.$row["a"].'</td>
                         <th>*</th>
                         <td>'.$row["b"].'</td>
@@ -78,6 +79,7 @@ $table = $_SESSION['table'];
                             <a id="delete" href="table.php?t=1&index='.$i.'">supprimer</a>
                         </td>
                     </tr>';
+                    $ligne++;
                 }
             }
             else {

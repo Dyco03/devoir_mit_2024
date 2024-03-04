@@ -44,7 +44,7 @@
             font-weight: bold;
         }
 
-        .input-group input[type="text"] {
+        .input-group input[type="number"] {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -78,11 +78,11 @@
         <form action="table.php" method="POST">
             <div class="input-group">
                 <label for="a">A :</label>
-                <input type="text" id="a" name="a" placeholder="Entrez la valeur de A" required>
+                <input type="number" id="a" name="a" placeholder="Entrez la valeur de A" required>
             </div>
             <div class="input-group">
                 <label for="b">B :</label>
-                <input type="text" id="b" name="b" placeholder="Entrez la valeur de B" required>
+                <input type="number" id="b" name="b" placeholder="Entrez la valeur de B" required>
             </div>
             <button type="submit">Valider</button>
         </form>

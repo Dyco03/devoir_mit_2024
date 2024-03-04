@@ -34,7 +34,7 @@
         margin-bottom: 5px;
         font-weight: bold;
     }
-    .input-group input[type="text"] {
+    .input-group input[type="number"] {
         width: calc(50% - 10px);
         padding: 8px;
         border: 1px solid #ccc;
@@ -62,11 +62,11 @@
     <form action="table.php" method="post">
         <div class="input-group">
             <label for="value1">a:</label>
-            <input type="text" id="value1" name="a_mod" required>
+            <input type="number" id="value1" name="a_mod" required>
         </div>
         <div class="input-group">
             <label for="value2">b:</label>
-            <input type="text" id="value2" name="b_mod" required>
+            <input type="number" id="value2" name="b_mod" required>
         </div>
         <!-- Champs cachés pour envoyer l'index -->
         <input type="hidden" name="index_mod" value=<?php echo $_GET["index_mod"]?>>
