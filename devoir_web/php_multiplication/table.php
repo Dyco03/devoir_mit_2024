@@ -7,7 +7,6 @@ if (!isset($_SESSION['table'])) {
     $_SESSION['table'] = array();
 }
 
-echo $_POST["a_mod"];
 $a = $_POST['a'];
 $b = $_POST['b'];
 $a_mod = $_POST['a_mod'];
