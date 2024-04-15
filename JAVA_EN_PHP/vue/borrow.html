@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Borrowing</title>
+<link rel="stylesheet" href="../css/borrow.css">
+</head>
+<body>
+<h2>Book Borrowing</h2>
+<form action="BorrowServlet" method="post">
+    <table>
+       <tr>
+        <td>Member ID:</td>
+        <td><input type="text" name="userId" required></td>
+       </tr>
+       <tr>
+        <td>Book ID:</td>
+        <td><input type="text" name="bookId" required></td>
+       </tr>
+       <tr>
+        <td>Borrowing Date:</td>
+        <td><input type="date" name="borrowDate" required></td>
+       </tr>
+       <tr>
+        <td>Return Due Date:</td>
+        <td><input type="date" name="returnDueDate" required></td>
+       </tr>
+       <tr>
+        <td colspan="2"><input type="submit" value="Borrow"></td>
+       </tr>
+    </table>
+</form>
+	<a href='ListBorrowServlet'>Show Borrowed Books</a>
+	<a href='MemberListServlet'>Show Member List</a>
+    <a href='ListRegisterServlet'>Show Book List</a>
+    <a href='home.jsp'>Home</a>
+</body>
+</html>
